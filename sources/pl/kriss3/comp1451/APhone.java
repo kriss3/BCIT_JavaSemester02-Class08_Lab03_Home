@@ -76,13 +76,9 @@ public class APhone extends AppleDevice
 		if (Double.doubleToLongBits(minutesLeftInThePlan) != Double.doubleToLongBits(other.minutesLeftInThePlan))
 			return false;
 		
-		if (Math.abs(this.minutesLeftInThePlan - other.minutesLeftInThePlan) <= 10) {
+		if (Math.abs(this.minutesLeftInThePlan - other.minutesLeftInThePlan) <= 10) 
 			return true;
-		 }
-			 
-		return true;
+		else
+			return false;
 	}
-	
-	
-	
 }

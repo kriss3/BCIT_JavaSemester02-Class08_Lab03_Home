@@ -61,7 +61,10 @@ public class APhoneSeven extends APhone
 		if (hasHighRezCamera != other.hasHighRezCamera)
 			return false;
 		
-		return true;
+		if (hasHighRezCamera && (Math.abs(this.getMinutesLeftInThePlan() - other.getMinutesLeftInThePlan()) <= 10)) 
+			return true;
+		else
+			return false;
 	}
 	
 	@Override
